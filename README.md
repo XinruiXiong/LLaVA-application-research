@@ -31,7 +31,7 @@ Download the dataset here: [a link, I'll upload soon], and unzip it to ./playgro
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash scripts/v1_5/finetune_lora.sh 
 ```
-The Lora version requires less GPU memory (4 A6000 will be ok). For higher 
+The Lora version requires less GPU memory (4 A6000 GPU will be ok). For better hardware equipments, try ./scripts/v1_5/finetune.sh. 
 
 
 ### 4. Finetune in the EEG dataset
