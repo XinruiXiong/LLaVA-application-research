@@ -1,2 +1,37 @@
 # LLaVA-application-research
-LLaVA rebuild and application
+LLaVA rebuild and application of cross-modality generation
+
+### 1. Set-up
+Follow LLaVA original instructions
+
+1. Clone this repository
+```bash
+git clone https://github.com/XinruiXiong/LLaVA-application-research.git
+cd LLaVA-application-research
+```
+2. Install Package
+```Shell
+conda create -n llava-eeg python=3.10 -y
+conda activate llava-eeg
+pip install -e .
+```
+
+3. Install additional packages for training cases
+```
+pip install -e ".[train]"
+pip install flash-attn --no-build-isolation
+```
+
+### 2. Dataset
+Download the dataset here: [a link, I'll upload soon], and unzip it to ./playground/data.
+
+
+### 3. Finetune in the subset
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash scripts/v1_5/finetune_lora.sh 
+```
+
+### 4. Finetune in the EEG dataset
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash scripts/v1_5/finetune_lora_eeg.sh 
+```
