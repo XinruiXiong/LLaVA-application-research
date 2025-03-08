@@ -2,7 +2,7 @@
 LLaVA rebuild and application of cross-modality generation
 
 ### 1. Set-up
-Follow LLaVA original instructions
+Follow LLaVA original instructions: https://github.com/haotian-liu/LLaVA/tree/main
 
 1. Clone this repository
 ```bash
@@ -21,7 +21,7 @@ pip install -e .
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
-Or download the wheel manually on github if building failed.
+Or download the wheel manually on github: https://github.com/Dao-AILab/flash-attention/releases if building failed (highly likely to happen).
 
 ### 2. Dataset
 Download the dataset here: [a link, I'll upload soon], and unzip it to ./playground/data.
@@ -31,6 +31,8 @@ Download the dataset here: [a link, I'll upload soon], and unzip it to ./playgro
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash scripts/v1_5/finetune_lora.sh 
 ```
+The Lora version requires less GPU memory (4 A6000 will be ok). For higher 
+
 
 ### 4. Finetune in the EEG dataset
 ```bash
