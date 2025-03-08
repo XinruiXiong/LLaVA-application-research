@@ -41,7 +41,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 bash scripts/v1_5/finetune_lora_eeg.sh
 [a link, I'll upload soon]
 
 On Huggingface:
-https://huggingface.co/Xinrui01/llava-13b-lora
+https://huggingface.co/Xinrui01/llava-13b-lora \\
 https://huggingface.co/Xinrui01/llava-13b-eeg-lora
 
 
