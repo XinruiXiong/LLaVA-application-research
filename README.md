@@ -21,6 +21,7 @@ pip install -e .
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
+Or download the wheel manually on github if building failed.
 
 ### 2. Dataset
 Download the dataset here: [a link, I'll upload soon], and unzip it to ./playground/data.
@@ -35,3 +36,12 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 bash scripts/v1_5/finetune_lora.sh
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash scripts/v1_5/finetune_lora_eeg.sh 
 ```
+
+### 5. Checkpoints download
+[a link, I'll upload soon]
+
+On Huggingface:
+https://huggingface.co/Xinrui01/llava-13b-lora
+https://huggingface.co/Xinrui01/llava-13b-eeg-lora
+
+
