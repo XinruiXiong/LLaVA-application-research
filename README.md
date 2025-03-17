@@ -24,7 +24,7 @@ pip install flash-attn --no-build-isolation
 Or download the wheel manually on github: https://github.com/Dao-AILab/flash-attention/releases if building failed (highly likely to happen).
 
 ### 2. Dataset
-Download the dataset here: [a link, I'll upload soon], and unzip it to ./playground/data.
+Download the [dataset](https://drive.google.com/file/d/1uW1opK8Hus2FpEyLMlND3SeLRjBbn5bG/view?usp=sharing), and unzip it to ./playground/data.
 
 
 ### 3. Finetune in the subset
