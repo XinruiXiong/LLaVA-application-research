@@ -40,7 +40,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 bash scripts/v1_5/finetune_lora_eeg.sh
 ```
 
 ### 5. Checkpoints download
-[a link, I'll upload soon]
+Download the [checkpoints](https://drive.google.com/file/d/1F1k_faN-cotQbn1rkUCt3PKXc_SZjte4/view?usp=sharing),and unzip to ./checkpoints
 
 On Huggingface:
 
@@ -56,7 +56,7 @@ CUDA_VISIBLE_DEVICES=0 python inference-eeg.py
 One GPU task, You may change the path in this file to select a specific eeg image.
 
 Evaluate:
-download [Test data Index](https://drive.google.com/file/d/1vjAX34KEA8mLq-5Yqy3R96HLff-5Un3b/view?usp=drive_link) and put under ./playground/data/
+download [https://drive.google.com/file/d/1vjAX34KEA8mLq-5Yqy3R96HLff-5Un3b/view?usp=sharing) and put under ./playground/data/
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python eeg_predict.py
