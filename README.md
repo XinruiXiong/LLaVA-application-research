@@ -56,7 +56,7 @@ CUDA_VISIBLE_DEVICES=0 python inference-eeg.py
 One GPU task, You may change the path in this file to select a specific eeg image.
 
 Evaluate:
-download [https://drive.google.com/file/d/1vjAX34KEA8mLq-5Yqy3R96HLff-5Un3b/view?usp=sharing) and put under ./playground/data/
+download [Test data index](https://drive.google.com/file/d/1vjAX34KEA8mLq-5Yqy3R96HLff-5Un3b/view?usp=sharing) and put under ./playground/data/
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python eeg_predict.py
